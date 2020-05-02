@@ -1,0 +1,88 @@
+﻿/*
+	Comment
+*/
+
+a { /* Comment */ color: /* Comment */ Red; }
+
+.TestClass {
+	color: Black;
+	background-color: White;
+	text-align: left;}
+        
+			body{
+				margin: 0px;
+			}
+			.zhezhao{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				opacity: 0.5;
+			}
+			.tankuang{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			#header{
+				height: 40px;
+			}
+			#header-right{
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				border-radius: 5px;
+				background: red;
+				color: #fff;
+				right: 5px;
+				top: 5px;
+				text-align: center;
+			}
+		
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	min-width:620px;
+}
+#header,#footer{
+	clear:both;
+	padding:10px;
+	text-align:center;
+
+}
+#left,
+#right{
+	float:left;
+	width:50%;
+	margin:0 0 0 -151px;
+}
+#innerLeft,
+#innerRight{
+	margin:0 0 0 151px;
+	background-color:#efefef;
+}
+#middle{
+	float:left;
+	width:300px;
+	background-color:#ccc;
+}
+.inner {
+	padding:12px;
+}
+
+            body { height: 1000px; }
+            #test { position: fixed; top: 30%; right: 0%; width: 200px; height: 120px; background-color: skyblue; 
+            }
+            
+            .h1{
+                    color:green
+                    font-family：华文行楷
+}
