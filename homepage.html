@@ -1,0 +1,596 @@
+<html lang="en" style="font-size: 12px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="-site-verification" content="m1imKvW1HK">
+  <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://static.runoob.com/assets/jquery/jquery.growl/javascripts/jquery.growl.js" type="text/javascript"></script>
+<link href="https://static.runoob.com/assets/jquery/jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+<!-- 删除默认的苹果工具栏和菜单栏 ： 即启用 WebApp 全屏模式  -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 在web app应用下状态条（屏幕顶部条）的颜色；默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）若值为“black-translucent”将会占据页面px位置，浮在页面上方（会覆盖页面20px高度–iphone4和itouch4的Retina屏幕为40px）。 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- 忽略数字自动识别为电话号码 ,忽略识别邮箱 -->
+<meta name="format-detection" content="telephone=no, email=no">
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- 360强制全屏 -->
+<meta name="360-fullscreen" content="true">
+<!-- 站内搜索站点验证 -->
+<meta name="-site-verification" content="m1imKvW1HK">
+<link rel="shortcut icon" href="https://home..com/Public/img/favicon.ico" type="image/x-icon">
+<script type="text/javascript" async="" src="http://znsv..com/customer_search/api/js?sid=6706059176758103565&amp;plate_url=file%3A%2F%2F%2FC%3A%2FUsers%2Fke%2520su%2FDesktop%2F%25E5%2585%25B3%25E4%25BA%258E%25E7%2599%25BE%25E5%25BA%25A6.html&amp;t=440620"></script><script type="text/javascript" async="" src="http://znsv..com/customer_search/api/js?sid=6706059176758103565&amp;plate_url=file%3A%2F%2F%2FC%3A%2FUsers%2Fke%2520su%2FDesktop%2F%25E5%2585%25B3%25E4%25BA%258E%25E7%2599%25BE%25E5%25BA%25A6.html&amp;t=440620"></script><script type="text/javascript" async="" src="http://znsv..com/customer_search/api/js?sid=6706059176758103565&amp;plate_url=file%3A%2F%2F%2FC%3A%2FUsers%2Fke%2520su%2FDesktop%2F%25E5%2585%25B3%25E4%25BA%258E%25E7%2599%25BE%25E5%25BA%25A6.html&amp;t=440620"></script><script type="text/javascript" async="" src="JS/js"></script><script src="JS/fontbase.js.下载"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="stylesheet" href="style/common.css">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm..com/h.js%3Fb9a77820b2fa17d7223b50a01ab1aa7a' type='text/javascript'%3E%3C/script%3E"));
+</script><script src=" http://hm..com/h.js?b9a77820b2fa17d7223b50a01ab1aa7a" type="text/javascript"></script><script src=" http://hm..com/h.js?b9a77820b2fa17d7223b50a01ab1aa7a" type="text/javascript"></script><script src=" http://hm..com/h.js?b9a77820b2fa17d7223b50a01ab1aa7a" type="text/javascript"></script><script src="JS/h.js.下载" type="text/javascript"></script>
+
+  <link href="style/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
+  <title>suke</title>
+  <meta name="description" content="素客首页">
+  <meta name="keywords" content="suke，素客，个人首页，素客是干嘛的，suke的首页，">
+  	
+<script type="text/javascript">
+  $(function() {
+      $.growl({
+        title: "欢迎来到素客",
+        message: "welcome to suke!"
+      });
+  
+      $('.error').click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return $.growl.error({
+          title: "错误！",
+          message: "网页加载错误!"
+        });
+      });
+  
+      $('.notice').click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return $.growl.notice({
+          title: "提醒",
+          message: "您点击的位置可能存在问题!"
+        });
+      });
+      
+      return $('.warning').click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return $.growl.warning({
+          title: "警告",
+          message: "这个位置可能不可用!"
+        });
+      });
+  });
+  </script>
+  
+</head>
+<body id="indexAdmin">
+  <div class="bd-content-nav J-bd-nav nav-show">
+  <div class="section nav-section">
+    <div class="nav-box">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12">
+          <a href="https://home..com/home/index">
+            <img src="https://preview.cloud.189.cn/image/imageAction?param=464BEA2DF63E628B698ECA0D4827DB0FB94FD44AA6BDAA9DAD238922608F1AC8538613006CA3BF2C3FE479B04F37F7D5078135B3D384CF50F592F32926728130B04E5F3092F5CACF9CC11DB1506426E0116B330178B3A159325506D5" alt="" class="logo">
+          </a>
+        </div>
+        <div class="col-sm-10 col-xs-12">
+          <ul class="bd-nav">
+            <li class="nav-bd-link active"><a href="website/yx.html" target="_blank" class="pointer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小游戏</font></font></a></li>
+            <li class="nav-bd-link"><a href="website/gg.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工具</font></font></a></li>
+            <li class="nav-bd-link"><a href="website/yy.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">影音</font></font></a></li>
+            <li class="nav-bd-link"></li>
+            <li class="nav-bd-link"><a href="website/bk.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">suke博客</font></font></a></li>
+            <li class="nav-bd-link"><a href="website/sh.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生活汇总</font></font></a></li>
+            <div class="sideline" style="width: 72px; left: 15px;"></div>
+          </ul>
+        </div>
+        <div class="bd-content-fun">
+          <div class="home-div">
+            <span class="cn-home-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中文</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+            </font></font><a href="https://ir..com/phoenix.zhtml?c=188488&amp;p=irol-irhome" class="en-home-link" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EN</font></font></a>
+          </div>
+          <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv..com/customer_search/api/js?sid=6706059176758103565' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div><div id="bdcs"></div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="h5-nav-bar J-bd-nav">
+  <!-- <div class="h5-nav-search-btn"></div> -->
+  <div class="logo-box">
+    <img src="https://preview.cloud.189.cn/image/imageAction?param=FB018C34BD352D1328046ED83D0F8CFA444E4C354BE671D9F075C4187127DDC16078EFDD949C9B0E1EF5FADBC91242875C0DD50E86C0A7ED0308DBD6F00B219452077D5B78C9500BD2E9891351A07807A3A78AAA7E0BC00276656D4D" width="100%" alt="" class="h5-nav-logo">
+  </div>
+  <svg id="list" class="h5-nav-toggle-box" width="44" height="44" viewBox="0, 0, 44, 44"><desc>Created with Snap</desc><defs></defs><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0,2C0,2,44,2,44,2M0,42C0,42,44,42,44,42M0,22C0,22,44,22,44,22" stroke="#000000" style="stroke-width: 3;"></path><path d="M0,2C0,2,44,2,44,2M0,42C0,42,44,42,44,42M0,22C0,22,44,22,44,22" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0,2C0,2,44,2,44,2M0,42C0,42,44,42,44,42M0,22C0,22,44,22,44,22" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path><path d="M0 2h44M0 42h44M0 22h44" stroke="#000000" style="stroke-width: 3;"></path></svg>
+  <div class="h5-nav-list">
+    <a href="website/yx.html" class="h5-nav h5-active" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小游戏</font></font></a>
+    <a href="website/gg.html" class="h5-nav" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工具</font></font></a>
+    <a href="website/yy.html" class="h5-nav" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">影音</font></font></a>
+    <a href="#">17765656639</a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">试验场</font></font></a>
+    <a href="website/bk.html" class="h5-nav" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我的博客</font></font></a>
+    <a href="website/sh.html" class="h5-nav" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生活汇总</font></font></a>
+  </div>
+</div>
+<div class="h5-nav-mask" style="display: none;"></div>
+
+  <div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="status-message" style="display: none;"></div></div><div class="main">
+    <div class="main-body">
+      <div class="full-section">
+        <!-- 判断是跳链接 还是二级页面 -->
+          <a href="" class="link" target="_blank">
+                        <div class="section banner-section" style="background-image: url('https://preview.cloud.189.cn/image/imageAction?param=C7B66C6B0643A8524E1696ECA9B6E17F2E784F987235EA4ADB37436885823D303147742EF136FABE75D6E2C7D4AC0B8BAC22FC6ECA7D6597E47970462F44363FDC825183653E11EA233D6A19F046E4A6E3775FDD2F612978F4514D1D')"></div>
+          </a>
+        <!-- 判断是跳链接 还是二级页面 -->
+          <a href="" class="link" target="_blank">
+                        <div class="section mb-banner-section">
+            <img src="https://preview.cloud.189.cn/image/imageAction?param=C7B66C6B0643A8524E1696ECA9B6E17F2E784F987235EA4ADB37436885823D303147742EF136FABE75D6E2C7D4AC0B8BAC22FC6ECA7D6597E47970462F44363FDC825183653E11EA233D6A19F046E4A6E3775FDD2F612978F4514D1D" alt="" class="mb-banner">
+          </div>
+          </a>      </div>
+      <div class="full-section news-section">
+        <div class="section">
+          <div class="bd-home-news card-deck-wrapper">
+            <div class="news-content">
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="https://preview.cloud.189.cn/image/imageAction?param=0986381A13A06496DE3E6C26A945DE656609454666EA5340E8607EABCD8A337384E49B04939E5FEDD9E822D04F58E34F640B7C98910A90B1AFE4A12F39FC10450411D8C34F21FB38FBFEFB508DC2010C2984F2692C9818FE8D0DC5E7" alt="卡图像盖">
+                        <div class="card-block">
+                          <div class="bd-news-span"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">北京</font></font><!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="https://preview.cloud.189.cn/image/imageAction?param=37569E9FB810B4EE46F86944FCC17B6BDF0685030E82F7A632699EE560CF6A1707F6B0401DB9D01437C1D503D2F549839DADFD259D69CA795A86140B66693C205E68CA66FD5BE68C05AED3EC98AFD5B5D3FE7A9E6D55C96ECFCE4B47" alt="卡图像盖">
+                        <div class="card-block">
+                          <div class="bd-news-span"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">长沙</font></font><!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="https://preview.cloud.189.cn/image/imageAction?param=9A9EBCFB75B80686148B3CCD8FDBB01B24CD350776BC86276E321A4031BDE8F56C08308055C5898F8F859D9F8996666736DC5E9304E663ADE8ED79E52CB2F411268CD36A413BD13970B137DC55CD03917947E1B80C346D2D942DBA2A" alt="卡图像盖">
+                        <div class="card-block">
+                          <div class="bd-news-span"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">桂林</font></font><!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-section dynamic-section">
+        <div class="section">
+          <div class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">素客</font></font></div>
+          <div class="bd-home-dynamic-content">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="bd-dynamic-news">
+                  <div class="dynamic-title1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">助</font></font></div>
+                  <div class="news-list">
+                    <div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="" class="news-title" data-id="17939" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">suke 2020年4月7日11:50:54</font></font></a>
+                          <div class="news-time"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            2020-03-02                          </font></font></div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="https://github.com/suke3224/HTML-&quot;" class="news-title" data-id="17938" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">素客的Github开源项目</font></font></a>
+                          <div class="news-time"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            2020-02-28                          </font></font></div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="https://me.csdn.net/qq_45984664" class="news-title" data-id="17937" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">素客的CSDN开源项目</font></font></a>
+                          <div class="news-time"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            2020-01-26                          </font></font></div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="https://weibo.com/u/7252404174/home?wvr=5" class="news-title" data-id="17936" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">素客的微博</font></font></a>
+                          <div class="news-time">
+                            2019-12-05                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="https://home.cnblogs.com/u/1976275/" class="news-title" data-id="17935" target="_blank">素客的博客园</a>
+                          <div class="news-time">
+                            2019-11-22                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="https://www.meipian.cn/2t5yj8go?share_depth=1" class="news-title" data-id="17934" target="_blank">我的美篇</a>
+                          <div class="news-time">
+                            2019-10-20                          </div>
+                        </div>
+                      </div>                  </div>
+                  <div class="more-news">
+                    <a href="" target="_blank">
+                      <span class="more-news-tip">想知道更多？访问素客主页！</span>
+                      <!-- <img data-original="/Public/img/gray_right.png" alt="" class="more-news-img "> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="bd-dynamic-topic">
+                  <div class="dynamic-title1 topic-title">专题</div>
+                  <div class="bd-topic-items">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="https://preview.cloud.189.cn/image/imageAction?param=F68E8381656C95D6A0642DAC1F79A3BD46CB9B22A44D23DE0457A28C397FA83531AA465C131B2245161394A5011DF1E4B658453B479AA1F36BE7A1ABA344445CD4F9B27D239B461E3018D342A89FE9CAF804197BECB66D78111CAA89" alt="Card image" src="https://preview.cloud.189.cn/image/imageAction?param=F68E8381656C95D6A0642DAC1F79A3BD46CB9B22A44D23DE0457A28C397FA83531AA465C131B2245161394A5011DF1E4B658453B479AA1F36BE7A1ABA344445CD4F9B27D239B461E3018D342A89FE9CAF804197BECB66D78111CAA89" style="display: inline;">
+                            <div class="card-img-bottomlay">素客 香港之旅</div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="https://preview.cloud.189.cn/image/imageAction?param=720CF6F30EBE0D16429BD4C1BAC1096AD1C87A1ABDD79891A5163766E5D65DB93DCC6ACC88B5002ED2E9E95021C09DA560E410AF74906B91436DF580F0F51696945B0A017921749372452F9391AA919119FFFE8EE4FFBE105B6362BD" alt="Card image" src="https://preview.cloud.189.cn/image/imageAction?param=720CF6F30EBE0D16429BD4C1BAC1096AD1C87A1ABDD79891A5163766E5D65DB93DCC6ACC88B5002ED2E9E95021C09DA560E410AF74906B91436DF580F0F51696945B0A017921749372452F9391AA919119FFFE8EE4FFBE105B6362BD" style="display: inline;">
+                            <div class="card-img-bottomlay">素客 桂林之旅</div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="https://preview.cloud.189.cn/image/imageAction?param=E1D1C1A03A4D7C1088C81079493FFF0C112AAF924BC37D5B8A0B5D2A56E8BDF0AB102FEC1FB8B35BAF6883704EF8EE5F5ECC75B9B5BC1D0B2DDE7645C181197D44814E9B4199B9279B67B09CD31510CA7C41ED67CD8E2369A98552F9" alt="Card image" src="https://preview.cloud.189.cn/image/imageAction?param=E1D1C1A03A4D7C1088C81079493FFF0C112AAF924BC37D5B8A0B5D2A56E8BDF0AB102FEC1FB8B35BAF6883704EF8EE5F5ECC75B9B5BC1D0B2DDE7645C181197D44814E9B4199B9279B67B09CD31510CA7C41ED67CD8E2369A98552F9" style="display: inline;">
+                            <div class="card-img-bottomlay">素客 贵州之旅</div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="https://preview.cloud.189.cn/image/imageAction?param=4FBA3F0D46994B2B9C9E7699A78F517265D98B4469D3C3D0C70AEF96DC4024FE8B8254930AF4D39FFA9A9494A7782FECC2B5F42821CBFDC1E533A2B82095A402FA1C256F3D790B7B72FA8AAC31175E5B3915C6C25267B23D41587F33" alt="Card image" src="https://preview.cloud.189.cn/image/imageAction?param=4FBA3F0D46994B2B9C9E7699A78F517265D98B4469D3C3D0C70AEF96DC4024FE8B8254930AF4D39FFA9A9494A7782FECC2B5F42821CBFDC1E533A2B82095A402FA1C256F3D790B7B72FA8AAC31175E5B3915C6C25267B23D41587F33" style="display: inline;">
+                            <div class="card-img-bottomlay">素客 番禺之旅</div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="inwork-indicator" class="index3"></div>
+      <div class="full-section inwork-section bd-home-inwork">
+        <div class="section">
+          <div class="section-title inwork-section-title">工作在百度</div>
+          <div class="section-content inwork-section-content">
+            <div class="row card-deck">
+              <div class="col-sm-4 J-inwork-item video-link-wrap" vid="0">
+                  <div class="card bd-inwork-item">
+                    <div class="card-block bd-card-title">
+                      <span class="bd-card-span">素客 旅行<span class="bd-font-bottomline"></span></span>
+                    </div>
+                    <div class="bd-card-mod">
+                      <div class="img-outer">
+                        <div class="img-inner">
+                          <img class="card-img lazy" data-original="https://preview.cloud.189.cn/image/imageAction?param=A289DA08F9CD03030F2A1FA58B5454606B5967F0E6B016B35E809CFA57D8BACC3A30727B4E16393CF43CF1536CA47A33F5264CA07BC633A9ED8DC269B81711EF70B6CA00745984E6418DAAC30F72118D9536584F5A746F4E0E82678F" alt="Card image cap" src="https://preview.cloud.189.cn/image/imageAction?param=A289DA08F9CD03030F2A1FA58B5454606B5967F0E6B016B35E809CFA57D8BACC3A30727B4E16393CF43CF1536CA47A33F5264CA07BC633A9ED8DC269B81711EF70B6CA00745984E6418DAAC30F72118D9536584F5A746F4E0E82678F" style="display: inline;">
+                          <div class="bd-work-coverbg"></div>
+                          <div class="bd-work-cover">
+                            <img src="/play.png" alt="" class="video-link">
+                            <div class="bd-work-slogan">素客的旅行</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                              <div class="col-sm-4 J-inwork-item">
+                  <a href="" class="card bd-inwork-item" target="_blank">
+                                        <div class="card-block bd-card-title">
+                    <span class="bd-card-span">生活<span class="bd-font-bottomline"></span></span>
+                  </div>
+                  <div class="bd-card-mod">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img lazy" data-original="" style="display: inline;" src="002sdfghjkjhgfdfgh.jpg">
+                        <div class="bd-work-coverbg"></div>
+                        <div class="bd-work-cover">
+                          <div class="bd-work-slogan">
+                            <p style="box-sizing: border-box; margin: 0px 0px 10px;">享受生活，让人生无悔</p><p style="box-sizing: border-box; margin: 0px 0px 10px;">远离城市的喧嚣</p>                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>                              <div class="col-sm-4 J-inwork-item">
+                  <a href="" class="card bd-inwork-item" target="_blank">
+                                        <div class="card-block bd-card-title">
+                    <span class="bd-card-span">工作<span class="bd-font-bottomline"></span></span>
+                  </div>
+                  <div class="bd-card-mod">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img lazy" data-original="">
+                        <div class="bd-work-coverbg"></div>
+                        <div class="bd-work-cover">
+                          <div class="bd-work-slogan">
+                            <p>为世界所创造<br></p>                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-section h5-inwork-section">
+        <div class="section">
+          <div class="h5-inwork-title">
+            <span class="h5-inwork-title-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">素客旅行精选</font></font></span>
+            <div class="h5-inwork-title-underline"></div>
+          </div>
+          <a href="" class="h5-inwork-content">
+                        <div class="img-outer">
+            <div class="img-inner">
+              <img class="card-img" src="https://preview.cloud.189.cn/image/imageAction?param=37569E9FB810B4EE46F86944FCC17B6BDF0685030E82F7A632699EE560CF6A1707F6B0401DB9D01437C1D503D2F549839DADFD259D69CA795A86140B66693C205E68CA66FD5BE68C05AED3EC98AFD5B5D3FE7A9E6D55C96ECFCE4B47">
+              <div class="h5-inwork-cover">
+                <div class="h5-inwork-slogan">
+                  <p style="box-sizing: border-box; margin: 0px 0px 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">玩遍全国</font></font></p><p style="box-sizing: border-box; margin: 0px 0px 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">祖国的大好河山</font></font></p>                </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <!--  <div class="bd-home-ourSearch">
+        <div class="bd-ourSearch-title">大家都在搜</div>
+        <div class="bd-ourSearch-list">
+          <img data-original="/Public/img/bd_home_ourSearch_bg.png" alt="" class="bd-ourSearch-img">
+        </div>
+      </div> -->
+      
+      <div class="full-section doodle-section">
+        <div class="section">
+          
+          
+        </div>
+      </div>
+      <div class="full-section company-section">
+        <div class="section">
+          
+        </div>
+      </div>
+    </div>
+    <div class="full-section bottom-section">
+  <div class="section">
+    <div class="bd-home-bottom">
+      <div class="bd-bottom-share">
+        <span>关于作者请关注：</span>
+
+
+        <div class="share-wechat">
+                    <img src="image/canbfldghejikm1496932813.png" class="share-wechat-img" alt="">
+                    <img src="image/djkgaclebfhnim1496932814.jpg" class="share-wechat-qrcode">
+                  </div>
+                        <a href="https://weibo.com/u/7252404174/home?wvr=5" target="_blank">
+                  <img src="image/fnejlmkaghcdib1496932842.png" alt="">
+                </a>                <a href="https://www.facebook.com/Incorporated" target="_blank">
+                  <img src="image/ldmfajnhcbkegi1496932864.png" alt="">
+                </a>                <a href="https://twitter.com/_Inc" target="_blank">
+                  <img src="image/ldgjhfknbaicem1496932883.png" alt="">
+                </a>
+      </div>
+
+            
+    </div>
+  </div>
+</div>
+
+<div class="return-top">
+  <img src="image/return-top.png" alt="" class="return-img">
+</div>
+<div class="pc-return" style="display: block;">
+  <img src="image/pc-backtop.png" alt="" class="pc-return-img">
+</div>
+<div class="mobile-bd-home-bottom">
+  <div class="bd-bottom-share">
+    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实时资讯请关注：</font></font></span>
+
+
+
+    <div class="share-wechat">
+                <img src="image/canbfldghejikm1496932813.png" class="share-wechat-img" alt="">
+                <img src="image/djkgaclebfhnim1496932814.jpg" class="m-share-wechat-qrcode">
+              </div>
+                     <a href="https://weibo.com/u/7252404174/home?wvr=5" target="_blank">
+              <img src="image/fnejlmkaghcdib1496932842.png" alt="">
+            </a>           <a href="https://www.facebook.com/Incorporated" target="_blank">
+              <img src="image/ldmfajnhcbkegi1496932864.png" alt="">
+            </a>           <a href="https://twitter.com/_Inc" target="_blank">
+              <img src="image/ldgjhfknbaicem1496932883.png" alt="">
+            </a>
+  </div>
+  <div class="mobile-flex">
+    <div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于素客</font></font><img src="image/mobile-arrow-up.png" class="mobile-arrow-up" style="display: block;"><img src="image/mobile-arrow-down.png" class="mobile-arrow-down" style="display: none;"></div>
+           <ul class="mobile-bd-detail" style="display: none;">
+            <li><a href="https://cloud.189.cn/t/qyU7RjJRRnea" target="_blank">更多</a></li><li><a href="https://download.cloud.189.cn/file/downloadFile.action?dt=51&amp;expired=1586922967795&amp;play=1&amp;sk=994c9a3c-2be5-48db-bbee-a07e6e03e8e4&amp;ufi=1151227222167982&amp;zyc=180&amp;token=cloud14&amp;sig=ZVy70pJXtC7ZZdBJRV1DcAskLcg%3D" target="_blank">旅行视频</a></li><li><a href="https://download.cloud.189.cn/file/downloadFile.action?dt=51&amp;expired=1586923024765&amp;play=1&amp;sk=994c9a3c-2be5-48db-bbee-a07e6e03e8e4&amp;ufi=3150326730781216&amp;zyc=180&amp;token=cloud14&amp;sig=CU2EXTajy6hl0UPQ9PFKsNZjzQw%3D" target="_blank">百度大事记</a></li><li><a href="http://home..com/home/index/management_team" target="_blank">管理团队</a></li>        </ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多信息</font></font><img src="image/mobile-arrow-up.png" class="mobile-arrow-up" style="display: block;"><img src="image/mobile-arrow-down.png" class="mobile-arrow-down" style="display: none;"></div>
+           <ul class="mobile-bd-detail" style="display: none;">
+            <li><a href="Untitled-3.html" target="_blank">原手机主页</a></li><li><a href="Untitled-1.html" target="_blank">原PC主页</a></li>  
+    <li><a herf="https://f.wps.cn/form-write/bBBrg43Q/%E9%82%80%E4%BD%A0%E5%A1%AB%E5%86%99%E3%80%8C%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8F%8D%E9%A6%88%E3%80%8D">评价本网站博客</a></li>
+</ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我</font></font><img src="image/mobile-arrow-up.png" class="mobile-arrow-up" style=""><img src="image/mobile-arrow-down.png" class="mobile-arrow-down" style="display: none;"></div>
+           <ul class="mobile-bd-detail" style="display: none;">
+            <li><a class="error" target="_blank">17765656639</a></li><li><a href="https://mail.qq.com/" target="_blank">3224183364</a></li><li><a href="https://weibo.com/u/7252404174/home?wvr=5" target="_blank">我的微博</a></li>        </ul>
+      </div>
+  </div>
+  <div class="mobile-bd-bottom-icp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©素客</font></font><a href="https://www..com/duty/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网页中任何图片·文字·视频未经允许，禁止转载</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></div>
+</div>
+<div class="loading"></div>
+
+    <div class="video-mask" videoid="0" style="display: none;">
+        <img src="image/close_video_mask.png" alt="" class="close-video-mask">
+        <div class="video-title">我们的故事</div>
+        <div class="video-container">
+          <video src="https://download.cloud.189.cn/file/downloadFile.action?dt=51&amp;expired=1586262041604&amp;play=1&amp;sk=8a162438-116c-4927-8a45-c2db937770b2&amp;ufi=1151227222167982&amp;zyc=180&amp;token=cloud14&amp;sig=YBxS1VcAA%2FrjpSY12%2FzsGreQy1c%3D" controls="" class="video-item"></video>
+        </div>
+        <div class="video-desc">
+          <p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在青春这段美好时光中</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">去做自己想做的事情</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">看看外面</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">如果我们的征途是星辰大海，愿你我青春无悔。</span><br></p>        </div>
+      </div>            
+    <script src="JS/jquery.min.js.下载"></script>
+<script src="JS/rem.min.js.下载"></script>
+<script src="JS/bootstrap.min.js.下载"></script>
+<script src="JS/snap.svg-min.js.下载"></script>
+<script src="JS/mustache.min.js.下载"></script>
+<!-- <script src="/Public/js/scroll.js"></script> -->
+<script src="JS/common.js.下载"></script>
+<script>
+var width = $(window).width();
+if (width > 768) {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','pc端']);
+  var height = $(window).height();
+  $(window).scroll(function() {
+    var top = $(window).scrollTop();
+    if (top > height) {
+      $(".pc-return").show();
+    } else {
+      $(".pc-return").hide();
+    }
+  });
+  $("body").on("click", ".pc-return", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+} else {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','手机端']);
+  $(".main").on("click", ".return-img", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+}
+</script>
+<script type="text/javascript">
+var GV = {
+  ROOT: "/",
+};
+</script>
+
+    <script src="JSjquery.lazyload.min.js.下载"></script>
+    <script src="JSswiper.min.js.下载"></script>
+    <script src="JSindex.js.下载"></script>
+    <script type="text/javascript">
+    var doodleSwiper = new Swiper('.doodle-swiper-container', {
+      initialSlide: 0,
+      loop: true,
+      slidesPerView: 3,
+      loopAdditionalSlides: 1,
+      loopedSlides: 3,
+      nextButton: '.doodle-swiper-button-next',
+      prevButton: '.doodle-swiper-button-prev',
+      lazyLoading: true
+    });
+    </script>
+
+
+</div>
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation">
+  <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66">
+    <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+
+    </circle>
+  </svg>
+  </div>
+  </div>
+  
+
+
+
+</body>
